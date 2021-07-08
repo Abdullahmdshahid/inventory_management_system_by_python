@@ -1,0 +1,11 @@
+{% extends "allform/main.html" %}
+
+{% block content %}
+<br>
+<h3 style="text-align: center; margin-top: 50px;">Are you sure you want to delete <span style="color: green;">  Customer:</span><span style="color: red;">"{{name}}"</span>?</h3>
+<br>
+<form method="post" style="text-align: center;">
+	<a class="btn btn-primary" href="{% url 'customer' %}">Cancel</a>
+	<input class="btn btn-danger" type="submit" name="Confirm" value="Confirm">
+</form>
+{% endblock %}

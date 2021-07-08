@@ -1,0 +1,15 @@
+{% extends "allform/main.html" %}
+
+{% block content %}
+	<form method="post">
+		{% csrf_token %}
+		<table style="margin: 20px">
+			<tr>
+				<td>{{ form.as_table}}</td>
+			</tr>
+		</table>
+		
+		<input type="submit" value="Update" class="btn btn-primary">
+	</form>
+
+{% endblock %}
